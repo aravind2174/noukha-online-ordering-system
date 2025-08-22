@@ -227,22 +227,77 @@ function App() {
         }
       `}</style>
 
-      {/* Hero Section with Video Background */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Video */}
-        <div className="absolute inset-0 z-0">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            className="w-full h-full object-cover scale-105"
-            poster="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSIjMUYyOTM3Ii8+CjxwYXRoIGQ9Ik05NjAgNTQwQzEwNjAuNDYgNTQwIDExNDAuNDYgNDYwIDExNDAuNDYgMzYwQzExNDAuNDYgMjYwIDEwNjAuNDYgMTgwIDk2MCAxODBDODU5LjU0MiAxODAgNzc5LjU0MiAyNjAgNzc5LjU0MiAzNjBDNzc5LjU0MiA0NjAgODU5LjU0MiA1NDAgOTYwIDU0MFoiIGZpbGw9IiMzNzNENTMiLz4KPC9zdmc+"
-          >
-            <source <iframe src="https://player.vimeo.com/video/1088319346?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="RESTAURANT MGT SOFTWARE FINAL VIDEO"></iframe>" />
-            {/* Fallback for demo */}
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
-        </div>
+{/* Hero Section with Vimeo Video Background */}
+<section className="relative h-screen flex items-center justify-center overflow-hidden">
+  {/* Background Video - Vimeo */}
+  <div className="absolute inset-0 z-0">
+    <iframe 
+      src="https://player.vimeo.com/video/1088319346?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+      className="w-full h-full object-cover scale-105 pointer-events-none"
+      style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        width: '100vw',
+        height: '100vh',
+        transform: 'translate(-50%, -50%) scale(1.1)',
+        minWidth: '100%',
+        minHeight: '100%'
+      }}
+      frameBorder="0" 
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+      referrerPolicy="strict-origin-when-cross-origin"
+      title="Restaurant Management Software"
+    ></iframe>
+    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 z-10"></div>
+  </div>
+  
+  {/* Hero Content */}
+  <div className="relative z-20 text-center text-white px-4 max-w-5xl mx-auto">
+    <div className="animate-fade-in-up">
+      <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-tight">
+        Transform Your Restaurant
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-400 block mt-4">
+          Into Digital Success
+        </span>
+      </h1>
+      <p className="text-xl md:text-2xl mb-10 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+        Boost revenue by 40%, streamline operations, and create unforgettable customer experiences with our cutting-edge online ordering platform.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-6 justify-center">
+        <button className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-10 py-5 rounded-full text-xl font-semibold transform hover:scale-105 transition-all duration-300 shadow-2xl">
+          Start Free Trial
+        </button>
+        <button className="glass-effect text-white px-10 py-5 rounded-full text-xl font-semibold hover:bg-white/20 transform hover:scale-105 transition-all duration-300">
+          <Play className="w-6 h-6 inline mr-3" />
+          Watch Demo
+        </button>
+      </div>
+    </div>
+  </div>
+
+  {/* Enhanced Floating Elements */}
+  <div className="absolute top-20 left-10 animate-float z-30">
+    <div className="glass-effect p-4 rounded-full">
+      <Utensils className="w-8 h-8 text-orange-400" />
+    </div>
+  </div>
+  <div className="absolute top-32 right-16 animate-float z-30" style={{ animationDelay: '1s' }}>
+    <div className="glass-effect p-4 rounded-full">
+      <ShoppingCart className="w-8 h-8 text-green-400" />
+    </div>
+  </div>
+  <div className="absolute bottom-32 left-20 animate-float z-30" style={{ animationDelay: '2s' }}>
+    <div className="glass-effect p-4 rounded-full">
+      <CreditCard className="w-8 h-8 text-blue-400" />
+    </div>
+  </div>
+  <div className="absolute top-1/2 right-8 animate-float z-30" style={{ animationDelay: '0.5s' }}>
+    <div className="glass-effect p-3 rounded-full">
+      <Star className="w-6 h-6 text-yellow-400" />
+    </div>
+  </div>
+</section>
         
         {/* Hero Content */}
         <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
