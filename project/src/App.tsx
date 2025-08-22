@@ -238,7 +238,7 @@ function App() {
             className="w-full h-full object-cover scale-105"
             poster="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSIjMUYyOTM3Ii8+CjxwYXRoIGQ9Ik05NjAgNTQwQzEwNjAuNDYgNTQwIDExNDAuNDYgNDYwIDExNDAuNDYgMzYwQzExNDAuNDYgMjYwIDEwNjAuNDYgMTgwIDk2MCAxODBDODU5LjU0MiAxODAgNzc5LjU0MiAyNjAgNzc5LjU0MiAzNjBDNzc5LjU0MiA0NjAgODU5LjU0MiA1NDAgOTYwIDU0MFoiIGZpbGw9IiMzNzNENTMiLz4KPC9zdmc+"
           >
-            <source src="/api/placeholder/video/restaurant-delivery.mp4" type="video/mp4" />
+            <source src="<iframe src="https://player.vimeo.com/video/1088319346?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="RESTAURANT MGT SOFTWARE FINAL VIDEO"></iframe>" />
             {/* Fallback for demo */}
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
